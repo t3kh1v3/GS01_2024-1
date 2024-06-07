@@ -1,75 +1,114 @@
 body {
-    background-image: url('pexels-ekamelev-920161.jpg');
+    background-image: url('../assets/pexels-ekamelev-920161blur.jpg');
     background-size: cover;
+    position: relative;
 }
 
 .container{
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
+    min-width: 1600px;
 }
-
 /* Estilização da navbar */
 .navbar {
-    padding: 20px 10px; 
-    background-color: #004080; 
+    padding: 0px 10px; 
+    margin-bottom: -25px;
+    background-color: #021F59; 
+    border-radius: 0px 0px 30px 30px;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: -8px;
 }
+
+.logo {
+    height: 90px; 
+    width: auto;
+    margin-right: 10px; 
+    transition: transform 0.2s ease-in-out;
+}
+.logo:hover {
+    transform: scale(1.2);
+}
+
+#sobreNos{
+    padding: 0px 50px 0px 20px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+#sobreNos:hover{
+    transform: scale(1.2); 
+}
+#nossoContato{
+    color: white;
+    padding: 0px 50px 0px 20px;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+#nossoContato:hover{
+    transform: scale(1.2); 
+}
+#nossosProjetos{
+    color: white;
+    padding: 0px 50px 0px 20px;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+#nossosProjetos:hover{
+    transform: scale(1.2); 
+}
+#nossosParceiros{
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+#nossosParceiros:hover{
+    transform: scale(1.2); 
+}
+
 .bg-primary {
     --bs-bg-opacity: 1;
-    background-color: #004080 !important;
+    background-color: #021F59 !important;
 }
 
 .navbar .nav-link {
     color: #fff !important; 
+    transition: transform 0.2s ease-in-out;
+}
+.navbar .nav-link:hover {
+    transform: scale(1.2);
 }
 
 .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.1); 
 }
+/* Estilização do carrossel*/
 
 .carousel-inner img {
     width: 100%;
-    height: 350px;
-}
-
-/* Fundo branco da página */
-#fundo{
-    background-color: white;
-    opacity: 0.9;
-    padding-top: 15px;
-    padding-bottom: 1px;
-    height: 1500px;
-}
-
-#title1{
-    color: black;
-    padding-bottom: 15px;
-}
-.main-content {
-    text-align: center;
-    opacity: 1;
-}
-.some-other-image {
-    transform: rotate(15deg);
-    opacity: 1;
+    height: 550px;
+    position: relative;
+    z-index: 1;
 }
 .group-name {
-    background-image: url('./logo.jpeg');
+    background-image: url('../assets/pexels-ekamelev-920157.jpg');
     background-size: cover;
-    height: 350px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     position: relative;
 }
+
 .group-name h1 {
-    font-size: 5em;
+    font-size: 3.5em;
 }
 .group-members {
-    background-image: url('./group.webp');
-    background-size: center;
-    height: 350px;
+    background-image: url('../assets/pexels-ekamelev-920157.jpg');
+    background-size: cover;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,11 +116,79 @@ body {
     color: white;
     flex-direction: column;
 }
+
+/* Fundo branco da página */
+#fundo{
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: -25px;
+    min-height: 120vh;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: -8px;
+}
+
+/* Conteúdo da página */
+
+.main-content {
+    text-align: center;
+    opacity: 1;
+}
+
+.main-content {
+    text-align: center;
+    opacity: 1;
+}
+
+/*Sobre Nós*/
+
+#title1{
+    color: black;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+#imgSobre{
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+#paragraf1{
+    font-size: 25px;
+    margin: 30px 0px 0px 120px;
+    padding: 10px;
+    text-align: center;
+    max-width: 800px;
+}
+#p1{
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+/*Apresentação do Projeto*/
+
+/* Nossos Parceiros */
+
+#imgParceiros {
+    display: block; /* Altere display para block */
+    margin: 0 auto; /* Centralize horizontalmente */
+    margin-bottom: 50px;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* style do footer */
+
 .x-footer-2022__top {
     display: flex;
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
     justify-content: space-between;
+    margin-top: -25px;
     padding: 40px 0;
-    background-color: #004080;
+    background-color: #021F59;
+    z-index: 1;
 }
