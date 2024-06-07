@@ -1,0 +1,40 @@
+body {
+    background-image: url('./body.jpeg');
+    background-size: cover;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 350px;
+}
+.main-content {
+    text-align: center;
+}
+.some-other-image {
+    transform: rotate(15deg);
+}
+.group-name {
+    background-image: url('./logo.jpeg');
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    color: white;
+    position: relative;
+}
+.group-name h1 {
+    font-size: 5em;
+}
+.group-members {
+    background-image: url('./group.webp');
+    background-size: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    color: white;
+    flex-direction: column;
+    font-size: 2em;
+}
