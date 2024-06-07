@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Product Page</title>
+        <title>TecHive Inc.</title>
+        <link rel="shortcut icon" type="imagem/png" href="./assets/favicon.webp">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link href="./assets/style.css" rel="stylesheet">
@@ -12,16 +13,27 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
                 <div class="container-fluid">
-                    <button data-mdb-button-init class="navbar-toggler" type="button" data-mdb-collapse-init aria-label="Toggle navigation"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" data-mdb-target="#navbarSupportedContent" >
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/logomarca.png" alt="Logomarca" class="logo">
+                    </a>
+                    <a id="sobreNos" href="#sobre">
+                        Sobre
+                    </a>
+                    <a id="nossoContato" href="">
+                        Contato
+                    </a>
+                    <a id="nossosProjetos" href="#projetos">
+                        Projetos
+                    </a>
+                    <a id="nossosParceiros" href="#parceiros">
+                        Parceiros
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
                         <ul class="navbar-nav d-flex flex-row me-1">
-                            <li class="nav-item me-3 me-lg-0">
-                                <a class="nav-link mx-1 text-white" href="#"><i class="far fa-calendar-alt"></i></a>
-                            </li>
                             <li class="nav-item me-3 me-lg-0">
                                 <a class="nav-link mx-1 text-white" href="#"><i class="fas fa-align-justify"></i></a>
                             </li>
@@ -33,8 +45,8 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="d-block w-100 p-0 text-center bg-info align-items-center">
-                            <div class="group-name">
-                                <h1>TecHive</h1>
+                            <div class="group-name"> 
+                                <h1>Uma nova maneira de mudar o mundo</h1>
                             </div>
                         </div>
                     </div>
@@ -42,10 +54,10 @@
                         <div class="d-block w-100 p-0 text-center bg-info">
                             <div  class="group-members">
                                 <p>Kaique Sousa Bonini - RM557693</p>
-                                <p>David - RM552634</p>
-                                <p>Pedro - RM558897</p>
-                                <p>Lucas - RM88501</p>
-                                <p>Luka - RM554411</p>
+                                <p>David Moura - RM552634</p>
+                                <p>Pedro Henrique Alves - RM558897</p>
+                                <p>Lucas Terra - RM88501</p>
+                                <p>Luka de Souza Lima - RM554411</p>
                             </div>
                         </div>
                     </div>
@@ -59,29 +71,123 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div class="main-content mt-4">
-                <h1>PRODUCT NAME</h1>
-                <img src="https://via.placeholder.com/800x400?text=Extremely+Cool+Image" class="img-fluid mt-4" alt="Extremely Cool Image">
-                <div class="row mt-4">
-                    <div class="col-md-4">
-                        <img src="https://via.placeholder.com/150?text=Some+Other+Image" class="some-other-image img-fluid" alt="Some Other Image">
+            <div id="fundo">
+                <div class="main-content mt-4" id="sobre">
+                    <h1 id="title1">Quem Nós Somos</h1>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <img src="./assets/logo1-removebg.png" class="img-fluid mt-4" id="imgSobre" alt="Extremely Cool Image">
+                        </div>
+                        <div class="col-md-8" id="paragraf1">
+                            <p id="p1">
+                                A TecHive é uma empresa inovadora dedicada à preservação ambiental marinha. Nossa missão é desenvolver soluções sustentáveis que protejam e conservem ecossistemas marinhos, por meio da criação de soluções inovadoras.
+                            </p>
+                            <p>
+                                Na TecHive, acreditamos que preservar o meio ambiente marinho é essencial para o futuro do planeta. Estamos comprometidos em criar soluções sustentáveis que façam a diferença. Com um time dedicado e especializado, lideramos a proteção e conservação dos ecossistemas marinhos, trabalhando para um futuro mais sustentável e próspero para todos.
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <p>
-                            Lorem ipsum ipLorem ipsum ipLorem ipsum ipLorem ipsum ipLorem lorem Lorem ipsum ipLorem lorem Lorem ipsum ipLorem lorem Lorem ipsum ipLorem lorem Lorem ipsum ipLorem lorem Lorem ipsum ipLorem lorem
-                            <a href="http://linkmaneiro.com">http://linkmaneiro.com</a>
-                        </p>
+                </div>
+                <section>
+                    <div class="section">
+                        <div class="main-content mt-4" id="projetos">
+                            <h1 id="title2">Conheça Nosso Projeto</h1>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <img src="./assets/pexels-jeremy-bishop-1260133-2397653.jpg" class="img-fluid mt-4" id="imgProjeto" alt="Extremely Cool Image">
+                                </div>
+                                <div class="col-md-8" id="paragraf2">
+                                    <p>
+                                        300 milhões de toneladas de plástico são produzidas todos os anos, poluindo nossos ecossistemas e afetando a vida marinha e a saúde humana. É urgente agir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="main-content mt-4" id="parceiros">
+                    <h1 id="title3">Nossos Parceiros</h1>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-12" id="p3">
+                            <p>
+                              Esses são nossos parceiros  
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/parceiros.jpg" class="img-fluid mt-4" id="imgParceiros" alt="Extremely Cool Image">
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="mt-4">
-                <p>
-                    Lorem ipsum ipLorem loremLorem ipLorem Lorem ipsum ipLorem lorem Lorem ipsum ipLorem lorem Lorem ipsum ipLorem lorem Lorem ipsum ipLorem lorem Lorem ipsum ipLorem loremLorem ipLorem Lorem ipsum ipLorem lorem Lorem ipsum
-                </p>
-            </div>
+            <div class="x-footer-2022__top">
+                <div class="x-footer-2022__left">
+                  <ul class="x-footer-2022__menu">
+                    <li>
+                      <a rel="noopener noreferrer" target="_blank" href="">
+                        Política de Doação
+                      </a>
+                    </li>
+                    <li>
+                      <a rel="noopener noreferrer" target="_blank" href="">
+                        Relatórios Anuais
+                      </a>
+                    </li>
+                    <li>
+                      <a rel="noopener noreferrer" target="_blank" href="">
+                        Política de Privacidade
+                      </a>
+                    </li>
+                    <li>
+                      <a rel="noopener noreferrer" target="_blank" href="">
+                        Fale Conosco
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="x-footer-2022__right">
+                  <p>Siga-nos nas redes sociais</p>
+                  <div class="x-footer-2022__socials">
+                    <ul>
+                      <li>
+                        <a href="" rel="noopener noreferrer" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" id="instagram-logo" width="20.175" height="20.175" viewBox="0 0 20.175 20.175">
+                            <path id="Caminho_38" data-name="Caminho 38" d="M14.607,0H5.567A5.574,5.574,0,0,0,0,5.567v9.04a5.574,5.574,0,0,0,5.567,5.567h9.04a5.574,5.574,0,0,0,5.568-5.567V5.567A5.574,5.574,0,0,0,14.607,0Zm3.778,14.607a3.782,3.782,0,0,1-3.778,3.777H5.567A3.782,3.782,0,0,1,1.79,14.607V5.567A3.782,3.782,0,0,1,5.567,1.79h9.04a3.782,3.782,0,0,1,3.778,3.777v9.04Z" fill="#fff"></path>
+                            <path id="Caminho_39" data-name="Caminho 39" d="M46.166,40.97a5.2,5.2,0,1,0,5.2,5.2A5.2,5.2,0,0,0,46.166,40.97Zm0,8.607a3.408,3.408,0,1,1,3.408-3.408A3.412,3.412,0,0,1,46.166,49.577Z" transform="translate(-36.079 -36.081)" fill="#fff"></path>
+                            <path id="Caminho_40" data-name="Caminho 40" d="M120.234,28.251a1.312,1.312,0,1,0,.928.384A1.318,1.318,0,0,0,120.234,28.251Z" transform="translate(-104.73 -24.88)" fill="#fff"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" rel="noopener noreferrer" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="22.773" height="18.5" viewBox="0 0 22.773 18.5">
+                            <path id="Caminho_191" data-name="Caminho 191" d="M60.359,112.477a13.337,13.337,0,0,0,20.465-11.271q0-.276-.011-.548a10.48,10.48,0,0,0,2.318-2.379,10.817,10.817,0,0,1-2.648.687h-.008l.007,0a4.957,4.957,0,0,0,2.036-2.6,16.246,16.246,0,0,1-2.271.947c-.219.073-.449.145-.686.211a4.679,4.679,0,0,0-7.974,4.256,14.092,14.092,0,0,1-9.6-4.855s-2.237,3.053,1.333,6.193a4.808,4.808,0,0,1-2.021-.6,4.447,4.447,0,0,0,3.7,4.645,4.282,4.282,0,0,1-2.064.086,4.613,4.613,0,0,0,4.3,3.268,8.988,8.988,0,0,1-6.871,1.964Z" transform="translate(-60.358 -96.041)" fill="#fff"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" rel="noopener noreferrer" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="19.814" height="15.169" viewBox="0 0 19.814 15.169">
+                            <path id="youtube_2_" data-name="youtube (2)" d="M19.407-3.708a2.609,2.609,0,0,0-1.746-1.91c-1.551-.464-7.753-.464-7.753-.464s-6.2,0-7.752.446A2.664,2.664,0,0,0,.409-3.708,31.215,31.215,0,0,0,0,1.5,31.1,31.1,0,0,0,.409,6.714a2.609,2.609,0,0,0,1.746,1.91c1.567.464,7.753.464,7.753.464s6.2,0,7.752-.446a2.609,2.609,0,0,0,1.747-1.909,31.225,31.225,0,0,0,.408-5.211,29.631,29.631,0,0,0-.408-5.229ZM7.933,4.751v-6.5L13.09,1.5Zm0,0" transform="translate(-0.001 6.082)" fill="#fff"></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" rel="noopener noreferrer" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="21.332" height="20.175" viewBox="0 0 21.332 20.175">
+                            <path id="Caminho_156" data-name="Caminho 156" d="M16.888,0H4.444A4.329,4.329,0,0,0,0,4.2V15.972a4.329,4.329,0,0,0,4.444,4.2H16.888a4.329,4.329,0,0,0,4.444-4.2V4.2A4.329,4.329,0,0,0,16.888,0ZM7.111,15.972H4.444V6.725H7.111ZM5.778,5.659A1.521,1.521,0,0,1,4.222,4.176,1.521,1.521,0,0,1,5.778,2.693,1.521,1.521,0,0,1,7.333,4.176,1.52,1.52,0,0,1,5.778,5.659Zm12,10.313H15.11V11.261c0-2.831-3.555-2.617-3.555,0v4.711H8.888V6.725h2.667V8.209c1.241-2.174,6.222-2.334,6.222,2.081Z" fill="#fff"></path>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>              
         </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/scripts.js"></script>
 </html>
+
