@@ -176,7 +176,7 @@ body {
 .section {
     background-color: #0a9bd4;
     border-radius: 40px;
-    height: 1800px;
+    height: 1840px;
     color: white;
 }
 #title2{
@@ -205,6 +205,10 @@ body {
 }
 
 /*                   ROLETA                   */
+
+.header-roleta {
+    margin-bottom: 1em
+}
 
 .container-roleta {
     width: 100%;
@@ -421,14 +425,11 @@ path {
 .btnRoleta {
     cursor: pointer;
     border: 5%;
+    margin-top: 1.5em
 }
 
 .play {
     z-index: 999;
-}
-
-.mensagem-premio {
-    margin-top: 1em;
 }
 
 
