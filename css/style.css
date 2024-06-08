@@ -103,7 +103,10 @@ body {
 }
 
 .group-name h1 {
-    font-size: 3.5em;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 3.0em;
 }
 .group-members {
     background-image: url('../assets/pexels-ekamelev-920157.jpg');
@@ -170,6 +173,181 @@ body {
 }
 /*Apresentação do Projeto*/
 
+.section {
+    background-color: #0a9bd4;
+    border-radius: 40px;
+    height: 1800px;
+    color: white;
+}
+#title2{
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+#imgProjeto{
+    display: flex;
+    margin-left: 70px;
+    margin-top: 50px;
+    height: 450px;
+    width: 500px;
+    border-radius: 100%;
+}
+#paragraf2{
+    font-size: 25px;
+    margin: 30px 0px 0px 120px;
+    padding: 50px;
+    text-align: center;
+    max-width: 800px;
+}
+
+/*                   ROLETA                   */
+
+#roleta {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+    border: 8px solid rgb(02, 31, 89);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px, rgba(0, 0, 0, 0.05) 0px 3px 0px;
+}
+
+#roleta:before {
+    content: '';
+    position: absolute;
+    width: 392px;
+    height: 392px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+#interno-roleta {
+    width: 100%;
+    height: 100%;
+    transition: all 6s cubic-bezier(0, .99, .44, .99);
+}
+
+#roleta div.sec {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 100px 0;
+    border-color: transparent transparent transparent transparent;
+    transform-origin: 100px 200px;
+    left: 100px;
+    top: -4px;
+    opacity: 1;
+}
+
+#roleta div.sec:nth-child(1) {
+    transform: rotate(45deg);
+    border-color: #e60810 transparent;
+}
+
+#roleta div.sec:nth-child(2) {
+    transform: rotate(90deg);
+    border-color: #e6f607 transparent;
+}
+
+#roleta div.sec:nth-child(3) {
+    transform: rotate(135deg);
+    border-color: #22e708 transparent;
+}
+
+#roleta div.sec:nth-child(4) {
+    transform: rotate(180deg);
+    border-color: #2d2dea transparent;
+}
+
+#roleta div.sec:nth-child(5) {
+    transform: rotate(225deg);
+    border-color: #ee2a99 transparent;
+}
+
+#roleta div.sec:nth-child(6) {
+    transform: rotate(270deg);
+    border-color: #100f0e transparent;
+}
+
+#roleta div.sec:nth-child(7) {
+    transform: rotate(315deg);
+    border-color: #19c transparent;
+}
+
+#roleta div.sec:nth-child(8) {
+    transform: rotate(360deg);
+    border-color: #0ff transparent;
+}
+
+#roleta div.sec .texto {
+    margin-top: -160px; /* Ajuste a posição vertical do texto */
+    color: #000; /* Cor do texto */
+    position: relative;
+    z-index: 10000000;
+    display: block;
+    text-align: center;
+    transform: rotate(-22.5deg); /* Ajuste a rotação do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-left: -25px; /* Ajuste a posição horizontal do texto */
+    text-shadow: rgba(255, 255, 255, 0.1) 0px -1px 0px, rgba(0, 0, 0, 0.2) 0px 1px 0px;
+}
+
+#spin {
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -54px 0 0 -54px;
+    border-radius: 50%;
+    z-index: 1000;
+    background: #fff;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+    user-select: none;
+}
+
+#spin:after {
+    content: "CLICK";
+    text-align: center;
+    line-height: 108px;
+    color: rgb(37, 32, 32);
+    text-shadow: 0 2px 0 #fff, 0 -2px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 100000;
+    width: 108px;
+    height: 108px;
+    display: block;
+}
+
+#spin:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 42px 30px;
+    border-color: transparent transparent #ffffff transparent;
+    top: -18px;
+    left: 24px;
+}
+
+#iterno-spin {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    border-radius: 50%;
+    z-index: 999;
+    box-shadow: rgba(255, 255, 255, 1) 0px -2px 0px inset, rgba(255, 255, 255, 1) 0px 2px 0px inset, rgba(0, 0, 0, 0.4) 0px 0px 5px;
+    background: rgb(255, 255, 255);
+}
+
+
 /* Nossos Parceiros */
 
 #imgParceiros {
@@ -187,8 +365,54 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     justify-content: space-between;
-    margin-top: -25px;
-    padding: 40px 0;
+    padding: 40px 20px; /* Ajuste para consistência com a navbar */
     background-color: #021F59;
     z-index: 1;
+}
+.x-footer-2022__right p{
+    color: white; /* Cor do texto */
+    padding: 0;
+    padding-right: 60px;
+}
+.x-footer-2022__menu {
+    list-style: none;
+    padding: 0px;
+    padding-left: 60px;
+    padding-top: 20px;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+.x-footer-2022__menu li {
+    display: inline; /* Ajusta os itens do menu para exibição em linha */
+}
+.x-footer-2022__menu li a {
+    color: white; /* Cor do texto */
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+.x-footer-2022__menu li a:hover {
+    transform: scale(1.2); 
+}
+.x-footer-2022__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.x-footer-2022__socials ul {
+    list-style: none;
+    padding: 0;
+    padding-right: 60px;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones sociais */
+}
+
+.x-footer-2022__socials ul li a svg {
+    fill: white; /* Cor dos ícones */
+    transition: transform 0.2s ease-in-out;
+}
+
+.x-footer-2022__socials ul li a svg:hover {
+    transform: scale(1.2); 
 }
