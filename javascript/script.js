@@ -1,48 +1,35 @@
+function playOnClick() {   
+	globalObjects = {
+		btnPlay: document.getElementById("btnPlay"),
+		roleta: document.getElementById("roleta"),
+	}
+	
+	globalObjects.timeInitial = new Date();
+	globalObjects.btnPlay.style.display = "none";
+	globalObjects.roleta.style.animation = "roleta 2s linear infinite";
+	
+	var random = Math.floor(Math.random() * 10) + 1
+	setTimeout(() => {
+		console.log('stopping')
+		stopOnClick();
+	}, 1000 * random);
+}
 
+function calculate() {
+	var timeFinal = new Date();
+	var tempo = Math.abs(timeFinal - globalObjects.timeInitial);
+	var box = parseInt(tempo / 250);
+	if (box > 7)
+			box = parseInt(box % 8);
+	
+	console.log(globalObjects.timeInitial, timeFinal, tempo, box, (tempo / 250));
+	return box;
+}
 
-//lógica de funcionamento da roleta
-
-var degree = 1800;
-var clicks = 0;
-
-$(document).ready(function(){
-
-	$('#spin').click(function(){
-		clicks++;
-
-		var newDegree = degree * clicks;
-		var extraDegree = Math.floor(Math.random()* (360 - 1 + 1)) +1;
-		totalDegree = newDegree + extraDegree;
-
-		$('#roleta .sec').each(function(){
-			var t = $(this);
-			var noY = 0;
-
-			var c = 0;
-			var n = 0;
-			var interval = setInterval(function(){
-				c++;
-				if(c === n){
-					clearInterval(interval);
-				}
-				var aoY = to.offset().top;
-				$('#txt').html(aoY);
-				console.log(aoY);
-
-				if(aoY < 23.83){
-					console.log('<<<');
-					$('#spin').addClass('spin');
-					setTimeout(function(){
-						$('#spin').removeClass('spin');
-
-					},100);
-				}
-			},10);
-
-			$('#interno-roleta').css({
-				'transform': 'rotate(' + totalDegree + 'deg)'
-			});
-			noY = t.offset().top;
-		});
-	});
-});
+function stopOnClick() {
+	globalObjects.roleta.style["animation-play-state"] = "paused";
+	globalObjects.btnPlay.style.display = "block";
+	var box = calculate();
+	var boxGanhador = document.getElementById("opt".concat(box))
+	document.getElementById("msgGanhador").innerHTML = "Parabéns! Você ganhou ".concat(boxGanhador.innerHTML);
+}

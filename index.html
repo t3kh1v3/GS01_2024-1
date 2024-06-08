@@ -123,20 +123,36 @@
                         <div class="row mt-4">
                             <div class="col-12 text-center"> 
                                 <h1 id="h1spin">Roleta Randômica</h1>
-                                <div id="roleta">
-                                    <div id="interno-roleta">
-                                        <div class="sec"><span class="texto">Desc. 5%</span></div>
-                                        <div class="sec"><span class="texto">Garrafa</span></div>
-                                        <div class="sec"><span class="texto">Desc. 10%</span></div>
-                                        <div class="sec"><span class="texto">Chaveiro</span></div>
-                                        <div class="sec"><span class="texto">Desc. 12.5%</span></div>
-                                        <div class="sec"><span class="texto">Botton</span></div>
-                                        <div class="sec"><span class="texto">Desc. 7.5%</span></div>
-                                        <div class="sec"><span class="texto">Caneta</span></div>
+                                <div class="container-roleta">
+                                    <div class="folha">
+                                        <div class="seta"></div>
+                                        <div class="roleta" id="roleta">
+                                            <div class="box1"></div>
+                                            <div class="box2"></div>
+                                            <div class="box3"></div>
+                                            <div class="box4"></div>
+                                            <div class="box5"></div>
+                                            <div class="box6"></div>
+                                            <div class="box7"></div>
+                                            <div class="box8"></div>
+                                            
+                                            <div class="premio premio1" id="opt1">Desc. 15%</div>
+                                            <div class="premio premio2" id="opt0">Caneta</div>
+                                            <div class="premio premio3" id="opt7">Desc. 5%</div>
+                                            <div class="premio premio4" id="opt6">Chaveiro</div>
+                                            <div class="premio premio5" id="opt5">Desc. 10%</div>
+                                            <div class="premio premio6" id="opt4">Botton</div>
+                                            <div class="premio premio7" id="opt3">Desc. 7.5%</div>
+                                            <div class="premio premio8" id="opt2">Garrafa</div>
+                                            
+                                            <div class="centerRoleta play" ></div>
+                                            <div class="centerRoleta stop"></div>
+                                        </div>
                                     </div>
-                                    <div id="spin">
-                                        <div id="iterno-spin"></div>
-                                    </div>
+                                    <p id="msgGanhador" class="mensagem-premio"></p>
+                                    <button id="btnPlay" class="btnRoleta play" onclick="playOnClick()">
+                                        Girar
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -224,23 +240,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        var degree = 1800;
-        var clicks = 0;
-
-        $(document).ready(function(){
-            $('#spin').click(function(){
-                clicks++;
-
-                var newDegree = degree * clicks;
-                var extraDegree = Math.floor(Math.random() * 360);
-                var totalDegree = newDegree + extraDegree;
-
-                $('#interno-roleta').css({
-                    'transform': 'rotate(' + totalDegree + 'deg)'
-                });
-            });
-        });
-    </script>
+    <script src="./javascript/script.js"></script>
 </body>
 </html>
